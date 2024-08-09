@@ -1,0 +1,128 @@
+body {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.685), rgb(255, 255, 255));
+}
+
+h1 {
+    text-align: center;
+    color: rgb(252, 244, 244);
+    text-shadow: 2px 2px rgb(97, 96, 110);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project-column {
+    position: relative;
+    display: block;
+    /* background-color: blue; */
+    padding: 20px;
+    margin: 10px;
+}
+
+.project-container {
+    position: absolute;
+    display: inline-block;
+    max-height: fit-content;
+    max-width: fit-content;
+    /* background-color: brown; */
+}
+
+.projects {
+    display: grid;
+    place-content: center;
+    gap: 20px;
+    /* background-color: beige; */
+    text-align: justify;
+    padding: 20px;
+    margin: 10px;
+    border: 3px solid brown;
+
+
+}
+
+.images {
+    /* background-color: aquamarine; */
+    max-width: fit-content;
+    position: relative;
+    height: auto;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    box-shadow: 10px 10px 25px black;
+}
+
+.images img {
+    /* width: 380px;
+    height: 300px; */
+    max-width: 380px;
+    max-height: 320px;
+    border: 2px solid rgb(160, 82, 82);
+
+}
+
+.project-title {
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        margin: 0px;
+        padding: 5px;
+    }
+
+    .project-column {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 5px;
+        margin: 0px;
+    }
+
+    .project-container {
+        overflow: hidden;
+    }
+
+    .projects {
+        display: grid;
+        max-width: 90%;
+        max-height: fit-content;
+        padding: 20px;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .images {
+        display: flex;
+        max-width: fit-content;
+        max-height: fit-content;
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    .images img {
+        margin-left: 10px;
+        /* border-radius: 25px; */
+        width: 380px;
+        height: 300px;
+        animation: horScroll 10s 2s ease-in-out both;
+
+
+
+    }
+
+    @keyframes horScroll {
+        0% {
+            transform: translateX(0%);
+            filter: brightness(100%);
+            filter: contrast(130%);
+        }
+
+        100% {
+            transform: translateX(-220%);
+            filter: brightness(100%);
+            filter: contrast(100%);
+
+        }
+
+    }
+
+
+}
