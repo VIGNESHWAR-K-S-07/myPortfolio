@@ -25,6 +25,11 @@ h1 {
     /* background-color: brown; */
 }
 
+.project-container p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:50px;
+}
+
 .projects {
     display: grid;
     place-content: center;
