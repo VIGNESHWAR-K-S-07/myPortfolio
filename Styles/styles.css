@@ -373,7 +373,7 @@ h2{
 
 /* For low resolution devices */
 
-@media screen and (max-width:700px){
+@media screen and (max-width:400px){
     body{
         margin:0;
         padding:0;
@@ -381,7 +381,7 @@ h2{
     .header-section{
         max-width:100%;
     }
-    .nav-bar{max-width:600px;
+    .nav-bar{max-width:400px;
         
         align-items: center;
         
